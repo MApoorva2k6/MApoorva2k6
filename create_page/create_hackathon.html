@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProctoSecure</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="icon" href="../Images/logo.png" type="image/icon type">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="glassmorphism">
+            <h2>Create New Hackathon</h2>
+            <form id="hackathonForm">
+                <div class="neomorphism">
+                    <label for="hackathonName">Hackathon Name</label>
+                    <input type="text" id="hackathonName" name="hackathonName" required>
+                </div>
+                <div class="neomorphism">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <div class="neomorphism">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                </div>
+                <div class="neomorphism">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="neomorphism">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="neomorphism">
+                    <label for="organizer">Organizer</label>
+                    <input type="text" id="organizer" name="organizer" required>
+                </div>
+                <div class="neomorphism">
+                    <label for="contactEmail">Contact Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <!-- ... Existing HTML code ... -->
+<div class="container">
+    <div class="dropdown-box">
+        <select id="hackathonDropdown" class="neumorphic-dropdown">
+            <option value="national">National Hackathon</option>
+            <option value="international">International Hackathon</option>
+        </select>
+    </div>
+    <!-- <div class="hackathon-table">
+        <h2>Available Hackathons:</h2>
+        <table id="hackathonTable">
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Hackathon Name</th>
+                    <th>Final Date of Registration</th>
+                    <th>Apply Now</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+    </div> -->
+</div>
+<!-- ... Existing HTML code ... -->
+
+                <div class="neomorphism button-container">
+                    <input type="submit" value="Create Hackathon">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="create.js"></script>
+</body>
+</html>

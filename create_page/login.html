@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProctoSecure</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="icon" href="..\Images\logo.png" type="image/icon type">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form id="hackathonForm">
+                <h2 style="color: whitesmoke;">Register</h2>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="School/College/Company Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-box">
+                    <label for="school">School</label>
+                    <input type="radio" id="school" name="accountType" value="school" required>
+                    
+                    <label for="college">College</label>
+                    <input type="radio" id="college" name="accountType" value="college" required>
+                    
+                    <label for="company">Company</label>
+                    <input type="radio" id="company" name="accountType" value="company" required>
+                </div>
+            </form>
+            <div class="button">
+                <a href="create_hackathon.html"><input type="submit" name="submit" value="Register"></a>
+            </div>
+            <div class="group">
+                <span><a href="#">Forget Password</a></span>
+                <span><a href="#">Login</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
