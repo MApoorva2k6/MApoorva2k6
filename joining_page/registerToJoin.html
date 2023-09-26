@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProctoSecure</title>
+    <link rel="stylesheet" href="rtj.css">
+    <link rel="icon" href="../Images/logo.png" type="image/icon type">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="input-container">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="input-container">
+                <label for="team-name">Team Name</label>
+                <input type="text" id="team-name" name="team-name" required>
+            </div>
+            <div class="input-container">
+                <label for="team-size">Team Size</label>
+                <input type="number" id="team-size" name="team-size" required>
+            </div>
+            <div class="input-container">
+                <label for="problem-number">Problem Number</label>
+                <input type="text" id="problem-number" name="problem-number">
+            </div>
+            <div class="input-container">
+                <label for="project-theme">Project Theme</label>
+                <input type="text" id="project-theme" name="project-theme" required>
+            </div>
+            <div class="input-container">
+                <label for="id-proof">Aadhar Card / ID Proof Number</label>
+                <input type="text" id="id-proof" name="id-proof" required>
+            </div>
+            <div class="input-container">
+                <label for="image-capture">Capture Your Photo</label>
+                <input type="file" accept="image/*" capture="camera" id="image-capture" name="image-capture">
+            </div>
+        </form>
+        <div class="loading-animation" style="display: none;">
+            <h3>Loading...</h3>
+            <div id="loading-animation"></div>
+        </div>
+        <div class="image-preview">
+            <h3>Image Preview</h3>
+            <video id="camera-feed" autoplay></video>
+            <canvas id="image-preview" style="display: none;"></canvas>
+        </div>
+        <a href="challenge.html"><button type="submit" class="submit-button">Submit</button></a>
+    </div>
+    <script src="rtj.js"></script>
+</body>
+</html>

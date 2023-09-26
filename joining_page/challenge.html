@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProctoSecure</title>
+    <link rel="icon" href="../Images/logo.png" type="image/icon type">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="challenge.css">
+</head>
+<body>
+    <div class="container">
+        <div class="problem-statement">
+            <h2>Problem Statement</h2>
+            <p>N Prison inmates are standing in a circle waiting to be executed. They are tagged based on their position 1,2,3... so on. Consequently, the Nth inmate stands next to inmate 1. The executioner decides to pardon one of these inmates. His technique for carrying out the execution is simple: he alternately pardons/kills inmates in a cyclic fashion. He pardons the 1st inmate, executes the 2nd, then pardons the 3rd inmate, executes the 4th. If by chance he pardons the Nth inmate he executes the 1st, since they are in a circle. The executioner continues like this until there is only one inmate left. Your job is to predict this lucky prisoner who survives.</p>
+        </div>
+        
+        <div class="input-output">
+            <div class="problem-statement">
+                <h2>Input Format</h2>
+                <p>The first line contains a single integer T denoting the number of test scenarios.</p>
+                <p>The next T lines each contain an integer N[i] which denotes the number of prisoners rounded up for execution in scenario i.</p>
+            </div>
+            <div class="problem-statement">
+                <h2>Constraints</h2>
+                <p>0 &lt; T &lt; 100</p>
+                <p>0 &lt; N[i] &lt; 10^6</p>
+            </div>
+            
+            <div class="problem-statement">
+                <h2>Output Format</h2>
+                <p>Print the lucky prisoner's TAG number. If T scenarios were tested, the output must contain T lines, each line displaying the TAG of the lucky prisoner in that scenario.</p>
+            </div>
+            
+            <div class="problem-statement">
+                <h2>Sample Input</h2>
+                <pre>2
+4
+1000</pre>
+            </div>
+            
+            <div class="problem-statement">
+                <h2>Sample Output</h2>
+                <pre>1
+977</pre>
+            </div>
+            
+            <div class="problem-statement">
+                <h2>Explanation</h2>
+                <p>Two scenarios were tested. In the first scenario 4 inmates were rounded up. The executioner pardons 1, kills 2, pardons 3, kills 4 the cycles back, since he had killed 4, he pardons 1, kills 3. Since only one prisoner remains, 1 is the lucky prisoner.</p>
+                <p>In the second scenario 1000 inmates were rounded up. 977 is the lucky prisoner.</p>
+                <p>Submissions: 33</p>
+            </div>
+        </div>
+        
+        <div class="dropdown-container">
+            <button class="dropdown-button">Select a Language</button>
+            <div class="dropdown-content">
+                <a href="#">PYTHON</a>
+                <a href="#">C</a>
+                <a href="#">PHP</a>
+            </div>
+        </div>
+
+        <div class="code-editor" contenteditable="true" id="code-editor">
+            // Your code here
+        </div>
+        
+        <button class="submit-button" onclick="submitCode()">Submit</button>
+    
+    <script>
+        function submitCode() {
+            var language = document.getElementById('language-selector').value;
+            var code = document.getElementById('code-editor').innerText;
+            
+            // Add code here to handle submission based on selected language
+            console.log("Selected language:", language);
+            console.log("Submitted code:", code);
+        }
+    </script>
+</body>
+</html>

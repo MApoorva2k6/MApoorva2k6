@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProctoSecure</title>
+    <link rel="stylesheet" href="join.css">
+    <link rel="icon" href="..\Images\logo.png" type="image/icon type">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown-box">
+            <select id="hackathonDropdown" class="neumorphic-dropdown">
+                <option value="national">National Hackathon</option>
+                <option value="international">International Hackathon</option>
+            </select>
+        </div><br/><br/><br/><br/>
+        <div class="hackathon-list">
+            <h2 style="color: aliceblue;">Available Hackathons:</h2><br/><br/>
+            <div class="hackathon-table">
+                <table id="hackathonTable">
+                    <thead>
+                        <tr>
+                            <th>Serial Number</th>
+                            <th>Hackathon Name</th>
+                            <th>Final Date of Registration</th>
+                            <th>Apply Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Hackathons will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="join.js"></script>
+</body>
+</html>

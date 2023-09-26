@@ -1,0 +1,200 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply background color and styles to the body */
+  body {
+    background-color: #1f242d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the container */
+  .container {
+    text-align: center;
+  }
+  
+  /* Style the dropdown box with neomorphism */
+  .dropdown-box {
+    display: inline-block;
+    padding: 20px;
+    background-color: #1f242d;
+    border-radius: 20px;
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  /* Hover effect for dropdown box */
+  .dropdown-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style the dropdown menu */
+  .neumorphic-dropdown {
+    background-color: #1f242d;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.1), inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #fff;
+    transition: box-shadow 0.3s, color 0.3s;
+    width: 250px; /* Increased width */
+  }
+  
+  /* Style the dropdown arrow */
+  .neumorphic-dropdown::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  
+  /* Hover effect for dropdown menu */
+  .neumorphic-dropdown:hover {
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.2), inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+    color: #61f0f5;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown options */
+  .neumorphic-dropdown option {
+    background-color: #1f242d;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Remove default dropdown arrow */
+  .neumorphic-dropdown::-ms-expand {
+    display: none;
+  }
+  
+  /* Adjust the focus outline for better accessibility */
+  .neumorphic-dropdown:focus {
+    outline: none;
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.2), inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Style the hackathon list */
+  .hackathon-list {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Style the list items as links */
+  .hackathon-list ul {
+    list-style-type: none;
+  }
+  
+  .hackathon-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .hackathon-list a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .hackathon-list a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+
+  /* Your existing styles ... */
+
+/* Style the hackathon list */
+.hackathon-list {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Style the list items */
+  .hackathon-list ul {
+    list-style-type: none;
+  }
+  
+  .hackathon-list li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff; /* Make the text white */
+  }
+  
+  /* Style the hackathon name and apply link */
+  .hackathon-name {
+    font-weight: bold;
+  }
+  
+  .apply-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .apply-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Your existing styles ... */
+
+/* Style the hackathon table */
+.hackathon-table {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f242d;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Style the Apply Now link */
+  .apply-link {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .apply-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 3px;
+}
+  
+::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, rgb(0, 251, 255) 0%, rgb(86, 0, 81) 100%);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh black;
+}
